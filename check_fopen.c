@@ -1,9 +1,14 @@
+#pragma once
+#ifndef CHECK_FOPEN_INCLUDED
+#define CHECK_FOPEN_INCLUDED
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
 #include <string.h>
 
-FILE * check_fopen( const char *path, const char *mode )
+FILE *
+check_fopen( const char *path, const char *mode )
 {
     FILE *fp;
 
@@ -11,6 +16,7 @@ FILE * check_fopen( const char *path, const char *mode )
 
     if( NULL == fp ) {
         char *msg;
+
         size_t len;
 
         len = strlen( path ) + strlen( mode ) + 40;
@@ -32,3 +38,5 @@ FILE * check_fopen( const char *path, const char *mode )
 
     return fp;
 }
+
+#endif
