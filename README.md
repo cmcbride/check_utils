@@ -1,6 +1,6 @@
 CHECK_UTILS
 ===========
-Simple C utilites that assist in the safer code development. 
+Simple C utilites that assist in safer code development.
 
 
 USAGE
@@ -15,10 +15,11 @@ For example:
 And then make sure to include the directory where the source code lives 
 in the compilation (-I for gcc).
 
-You can simply copy the respective files to your source code dir, and then 
-pass the current directory to the compiler.  For example: 
+You can simply copy the respective files to your source code directory, and 
+then pass the current directory to the compiler.  For example: 
 
     % gcc -I. ... 
+
 
 AUTHOR
 ------
