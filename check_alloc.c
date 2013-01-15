@@ -6,6 +6,14 @@
 #include <stddef.h>
 #include <stdio.h>
 
+/* useful macro */
+#define CHECK_CLEAN(array) do {\
+    if(array != NULL) {\
+        free( (array) );\
+        array = NULL;\
+    }\
+} while (0)
+
 static inline void *
 check_realloc( void *data, size_t count, size_t size )
 {
