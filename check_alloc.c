@@ -6,11 +6,11 @@
 #include <stddef.h>
 #include <stdio.h>
 
-/* useful macro */
-#define CHECK_CLEAN(array) do {\
-    if(array != NULL) {\
-        free( (array) );\
-        array = NULL;\
+/* useful macro, has to be a macro to set the pointer to NULL */
+#define CHECK_FREE( PTR ) do {\
+    if( PTR != NULL ) {\
+        free( PTR );\
+        PTR = NULL;\
     }\
 } while (0)
 
