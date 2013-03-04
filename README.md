@@ -1,6 +1,8 @@
 CHECK_UTILS
 ===========
-Simple C utilites that assist in safer code development.
+Simple C utilites that assist in safer code development. The idea is to create 
+simple drop in replacements for standard routines for primary use in simple C 
+coding (i.e. scientific codes).
 
 
 USAGE
@@ -26,5 +28,4 @@ AUTHOR
 Cameron McBride
 Sept 2012 
 cameron.mcbride@gmail.com
-
 
